@@ -1,0 +1,1684 @@
+{
+ "_comment": "Baseline semester plan extracted from course syllabi. Canvas overrides this whenever the two disagree. Sections: E / E2 / Mediterranean, except 15.761 and 15.S23 which have a single section.",
+ "_generated": "2026-09-14",
+ "courses": {
+  "15.010": {
+   "name": "Economic Analysis for Business Decisions",
+   "short": "Econ",
+   "section": "E",
+   "days": [
+    "Tue",
+    "Thu"
+   ],
+   "room": "E51-315",
+   "match": [
+    "15.010",
+    "Economic Analysis"
+   ]
+  },
+  "15.060": {
+   "name": "Data, Models, and Decisions",
+   "short": "DMD",
+   "section": "E",
+   "days": [
+    "Mon",
+    "Wed"
+   ],
+   "room": "E62-223",
+   "match": [
+    "15.060",
+    "Data, Models"
+   ]
+  },
+  "15.280": {
+   "name": "Communication for Leaders",
+   "short": "Comm",
+   "section": "E2",
+   "days": [
+    "Tue"
+   ],
+   "room": "E62-223",
+   "match": [
+    "15.280",
+    "Communication for Leaders"
+   ]
+  },
+  "15.311": {
+   "name": "Organizational Processes",
+   "short": "OP",
+   "section": "Mediterranean",
+   "days": [
+    "Thu"
+   ],
+   "room": "E51-325",
+   "match": [
+    "15.311",
+    "Organizational Processes"
+   ]
+  },
+  "15.515": {
+   "name": "Financial Accounting",
+   "short": "Accounting",
+   "section": "Mediterranean",
+   "days": [
+    "Tue",
+    "Thu"
+   ],
+   "room": "E51-335",
+   "match": [
+    "15.515",
+    "Financial Accounting"
+   ]
+  },
+  "15.761": {
+   "name": "Introduction to Operations Management",
+   "short": "Ops",
+   "section": "single",
+   "days": [
+    "Mon",
+    "Wed"
+   ],
+   "room": "E62-276",
+   "match": [
+    "15.761",
+    "Operations Management"
+   ]
+  },
+  "15.S23": {
+   "name": "AI Builder Space Proseminar",
+   "short": "AI Builder",
+   "section": "single",
+   "days": [
+    "Mon"
+   ],
+   "room": "E62-233",
+   "match": [
+    "15.S23",
+    "AI Builder"
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "course": "15.060",
+   "date": "2026-09-14",
+   "title": "Decisions Under Uncertainty: Experimentation",
+   "readings": [
+    "Bertsimas & Freund, chapter 3 (3.1, 3.4, 3.5)"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-14",
+   "title": "Case: Burger King and McDonalds",
+   "readings": [
+    "Production Processes",
+    "Types of Processes",
+    "MSD 2.6",
+    "BK/MD case introduction video"
+   ],
+   "prep": [
+    "Last names A-L prepare Burger King and skim McDonald's; M-Z the reverse",
+    "Prepare the three demand-capacity questions"
+   ]
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-09-14",
+   "title": "Course introduction and Vibe Coding Workshop, part I",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-09-15",
+   "title": "Economic Costs",
+   "readings": [
+    "Frontier AI Labs Are Renting Compute from Their Competitors",
+    "HBS case: From LLM to Agent? Anthropic's Next Move — Exhibit 5 and 'Competition in the AI Agent Race'",
+    "B&W 3.1-3.3, 8.1-8.2, 8.4, 8.7 (background)"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-09-15",
+   "title": "Communication Strategy: Structure",
+   "readings": [
+    "MIT Sloan Note: Persuasive Messaging Using The Shield Framework and Planning Tool",
+    "Munter, Know Your Audience",
+    "Sage: Evidence"
+   ],
+   "prep": [
+    "Lab 1: User's Manual Lab — bring hard copies for each teammate"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-09-15",
+   "title": "Accrual Accounting",
+   "readings": [
+    "Case: Active Services",
+    "Hanlon, Magee & Pfeiffer chapters 1, 2 and 3"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-16",
+   "title": "Decisions Under Uncertainty: Simulation",
+   "readings": [
+    "Bertsimas & Freund, chapter 5"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-16",
+   "title": "Capacity and Process Analytics (Buildup Diagrams)",
+   "readings": [
+    "Prescription for the Waiting-in-Line Blues: Entertain, Enlighten and Engage",
+    "MSD 2.1, 3.2-3.5",
+    "BK/MD case introduction video from minute 10"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-09-17",
+   "title": "Supply and Perfect Competition",
+   "readings": [
+    "Oil Prices Rise to Highest Level in a Month as Shipping in the Persian Gulf Nears a Halt",
+    "Data Centers to Add Billions in Power Costs in 13 States",
+    "B&W 2.2-2.3, 9.3 up to p.293 (background)"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.311",
+   "date": "2026-09-17",
+   "title": "Structural Design Lens I: Managing Organization Structure",
+   "readings": [
+    "Case: Nohria, Payton & Huberlie, Connective Mobility, HBS 9-816-051",
+    "The Structural Design Perspective, MIT Sloan 19-195"
+   ],
+   "prep": [
+    "Prepare the five study questions on structure and Brew's decisions"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-09-17",
+   "title": "Revenue Recognition",
+   "readings": [
+    "Case: Spartan"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-09-18",
+   "title": "Recitation 1: Demand, Costs, and Competitive Markets",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-18",
+   "title": "Recitation 2: Experimentation, Simulation",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-09-18",
+   "title": "Recitation: HW 1 material",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-18",
+   "title": "Recitation: Buildup Diagrams",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-21",
+   "title": "Decisions Under Uncertainty: Decision Trees",
+   "readings": [
+    "Case: Noverna",
+    "Bertsimas & Freund, chapter 1"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-09-21",
+   "title": "Vibe Coding Workshop, part II",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-09-22",
+   "title": "Monopoly and Sources of Market Power",
+   "readings": [
+    "HBS case: From LLM to Agent? Anthropic's Next Move (2025)",
+    "How Network Effects Make AI Smarter",
+    "P&R 4.5 (background)"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-09-22",
+   "title": "Communication Strategy: Persuasion",
+   "readings": [
+    "Cialdini, Harnessing the Science of Persuasion",
+    "Duarte, Are Your Presentations Too Emotional or Too Analytical?",
+    "Kazakoff, Persuading with Data, ch.7 pp.174-182",
+    "Hidden Brain podcast: Persuasion parts 1 and 2"
+   ],
+   "prep": [
+    "Lab 2: Persuasion Lab"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-09-22",
+   "title": "Revenue Recognition and Allowance Accounting",
+   "readings": [
+    "Case: Universal Technical Institute",
+    "Chapters 1 and 6"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-23",
+   "title": "Linear Regression I",
+   "readings": [
+    "Bertsimas & Freund, chapter 6.1-6.4"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-23",
+   "title": "Queueing",
+   "readings": [
+    "Queueing video",
+    "MSD chapters 8 and 9"
+   ],
+   "prep": [
+    "PATA case write-up due at the beginning of class"
+   ]
+  },
+  {
+   "course": "15.010",
+   "date": "2026-09-24",
+   "title": "Electricity Markets Investment Case",
+   "readings": [
+    "Electricity Lab Questions",
+    "P&R 7.2, 8.4 (background)"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.311",
+   "date": "2026-09-24",
+   "title": "Structural Design Lens II: Managing Motivation and Incentives",
+   "readings": [
+    "Case: Capon, Hausser Food Products Company, Columbia CU018",
+    "The Structural Design Perspective 19-195, re-read on control mechanisms",
+    "Optional: Cappelli & Tavis, The Performance Management Revolution"
+   ],
+   "prep": [
+    "Prepare study questions on Hausser's alignment system"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-09-24",
+   "title": "Inventory and COGS",
+   "readings": [
+    "Chapter 7"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-25",
+   "title": "Recitation 3: Decision Trees, Regression (delayed, 3-4pm)",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.311",
+   "date": "2026-09-25",
+   "title": "Team Day (8:30am-2:00pm, E62-262)",
+   "readings": [
+    "Simulation documents posted to Canvas before the session"
+   ],
+   "prep": [
+    "xCHANGE simulation",
+    "Report on initial team project progress"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-09-25",
+   "title": "Recitation: HW 2 material (delayed, 3-4pm)",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-25",
+   "title": "Recitation: Queueing",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-28",
+   "title": "Linear Regression II",
+   "readings": [
+    "Bertsimas & Freund, chapter 6.6-6.9"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-28",
+   "title": "Case: Progressive (Process and System Innovation)",
+   "readings": [
+    "Hammer, Re-engineering Work: Don't Automate, Obliterate",
+    "Case: Innovation at Progressive (A)",
+    "System Innovation video, Chaplin video"
+   ],
+   "prep": [
+    "Prepare the two questions on IR and Autograph through the system innovation framework"
+   ]
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-09-28",
+   "title": "Vibe Coding Workshop part III, guest speaker, project ideation",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-09-29",
+   "title": "Strategic Pricing I: Market Segmentation",
+   "readings": [
+    "The Pink Tax Costs People — Usually Women — Up to 48% More for Personal Care Products",
+    "Why Are Products Marketed to Women Sometimes More Expensive? (background)",
+    "B&W 9.1-9.2, 17.1-17.4, 18.1, 18.3"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-09-29",
+   "title": "Communication Strategy: Delivery and Managing Q&A",
+   "readings": [
+    "Bullock & Sanchez, Don't Underestimate the Power of Your Voice",
+    "Gershman, Do You Need Charisma to be a Great Public Speaker?",
+    "Su, How to Calm Your Nerves Before a Big Presentation",
+    "Webb, How to Nail the Q&A After Your Presentation"
+   ],
+   "prep": [
+    "Lab 3: Delivery Lab"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-09-29",
+   "title": "PPE and Depreciation",
+   "readings": [
+    "Case: Depreciation at Hertz",
+    "Chapter 8"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-30",
+   "title": "Causal Inference",
+   "readings": [
+    "Case: Optima Airlines"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-30",
+   "title": "AI and Operations I",
+   "readings": [
+    "Li & Fung Digital Platform video",
+    "Amazon Go video",
+    "Nauto product overview video"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-10-01",
+   "title": "Strategic Pricing II: Self-Selection and Two-Part Tariffs",
+   "readings": [
+    "Why do people keep buying printers they hate?",
+    "Streaming, Toilet Paper, Underwear: Subscription Fatigue Is Setting In (background)",
+    "B&W 18.4 pp.641-648, 21.1 pp.752-3"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.311",
+   "date": "2026-10-01",
+   "title": "Political Lens II: Managing Stakeholders for Sustainability",
+   "readings": [
+    "Case: Hannah Jones and Sustainability at Nike (A)",
+    "The Political Perspective 19-196, re-read on interests and stakeholders"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-10-01",
+   "title": "Intangible Assets",
+   "readings": [
+    "Case: Ford",
+    "Chapter 8"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-10-02",
+   "title": "Recitation 2: Strategic Pricing",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-02",
+   "title": "Recitation 4: Regression, Causal Inference",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-10-02",
+   "title": "Recitation: Review basics",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-05",
+   "title": "Logistic Regression",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-05",
+   "title": "AI and Operations II",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-10-05",
+   "title": "Sprint 1 begins",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-10-06",
+   "title": "Strategic Pricing III: Menus and Product Portfolios",
+   "readings": [
+    "Netflix kills Basic plan, making its cheapest ad-free tier $15.49",
+    "B&W 18.4 pp.648-653"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-10-06",
+   "title": "Communication Strategy: Presentation Design",
+   "readings": [
+    "Kazakoff, Webinar: Best Practices in Visual Design"
+   ],
+   "prep": [
+    "Lab 4: Presenting Slides Lab",
+    "Persuasive Presentation I sessions open today through Oct 23"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-10-06",
+   "title": "Acquisitions and Intercorporate Ownership",
+   "readings": [
+    "Case: Sovos Brands",
+    "Chapter 12"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-07",
+   "title": "Evaluating Classification Models",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-07",
+   "title": "Quality and Case: Glimpse",
+   "readings": [
+    "A Glimpse into EV Battery Quality Control",
+    "Background readings on battery quality and electric vehicles"
+   ],
+   "prep": [
+    "Prepare the three Glimpse questions on defect rates, pricing and moat"
+   ]
+  },
+  {
+   "course": "15.010",
+   "date": "2026-10-08",
+   "title": "Part I Capstone: From Demand Estimation to Pricing with AI",
+   "readings": [
+    "Are You Ready for Personalized Pricing?",
+    "Why Tech Companies Hire So Many Economists (background)",
+    "P&R 4.6"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.311",
+   "date": "2026-10-08",
+   "title": "Cultural Lens: Managing Organizational Culture",
+   "readings": [
+    "Case: Leslie & Aaker, Zappos: Happiness in a Box, Stanford M-333",
+    "The Cultural Perspective, MIT Sloan 19-197"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-10-08",
+   "title": "Marketable Securities",
+   "readings": [
+    "Chapter 12"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-10-09",
+   "title": "Recitation 3: Review Session",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-09",
+   "title": "Recitation 5: Logistic Regression",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-10-09",
+   "title": "Recitation: HW 3 material",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-13",
+   "title": "A Regression Case",
+   "readings": [
+    "Case: Milagro"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-13",
+   "title": "Case: Uber",
+   "readings": [
+    "Enabling X-to-the-xth: the Operational Secret Behind Uber's Explosive Growth"
+   ],
+   "prep": [
+    "Prepare the two questions on driver supply and wait times"
+   ]
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-10-13",
+   "title": "Sprint 1",
+   "readings": [],
+   "prep": [
+    "Squad check-in"
+   ]
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-14",
+   "title": "Mid-Term Review",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-14",
+   "title": "Case: GHN",
+   "readings": [
+    "GHN and AhaMove: Last-Mile Delivery in Vietnam"
+   ],
+   "prep": [
+    "Prepare the three questions on GHN's growth and AhaMove"
+   ]
+  },
+  {
+   "course": "15.311",
+   "date": "2026-10-15",
+   "title": "Midterm exam (in class, case-based)",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-10-15",
+   "title": "Midterm exam",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-16",
+   "title": "Recitation: PATA Case Review",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-19",
+   "title": "Midterm exam (in class)",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-19",
+   "title": "Inventory 1",
+   "readings": [
+    "Types of Inventory video",
+    "MSD 12, 13.1-13.3"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-10-19",
+   "title": "Sprint 1",
+   "readings": [],
+   "prep": [
+    "Squad check-in"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-10-20",
+   "title": "Communication Strategy: Active Listening and Inquiry",
+   "readings": [
+    "Duarte, Broaden Your Influence by Adapting How You Listen",
+    "Bryant & Sharer, Are You Really Listening?"
+   ],
+   "prep": [
+    "Lab 5: Leadership Development Lab",
+    "Complete feedback form for Lab"
+   ]
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-21",
+   "title": "Detecting Bias and Creating Fair Models",
+   "readings": [
+    "Case: Fairbank"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-21",
+   "title": "Case: M&S and Zara",
+   "readings": [
+    "Marks & Spencer and Zara: Process Competition in the Textile Apparel Industry",
+    "Zara's Business Model Overview video",
+    "MSD chapter 15"
+   ],
+   "prep": [
+    "Prepare the three questions on Zara's supply chain"
+   ]
+  },
+  {
+   "course": "15.010",
+   "date": "2026-10-22",
+   "title": "Midterm exam",
+   "readings": [],
+   "prep": [
+    "One-sided 8.5x11 note sheet allowed"
+   ]
+  },
+  {
+   "course": "15.311",
+   "date": "2026-10-22",
+   "title": "Interpersonal Dynamics I: Group Decision Making",
+   "readings": [
+    "Case: Wakefield Medical, roles distributed in class"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-23",
+   "title": "Recitation: Inventory 1",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-11-02",
+   "title": "Sprint 1 check-in and share-out, guest speaker, ideation",
+   "readings": [],
+   "prep": [
+    "Planning Document 2 due end of day"
+   ]
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-03",
+   "title": "Game Theory I: Introduction",
+   "readings": [
+    "AI: The Prisoner's Dilemma",
+    "OpenAI, Anthropic Ask U.S. Government to Consider Slowing Down AI (background)",
+    "B&W 12.1-12.3"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-11-03",
+   "title": "Communication Strategy: Communicating Across Cultures",
+   "readings": [
+    "Hartman, Intercultural Communication Note"
+   ],
+   "prep": [
+    "Lab 6: Culture Lab — bring a physical cultural artifact",
+    "Persuasive Presentation II sessions open today through Nov 19"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-03",
+   "title": "Statement of Cash Flows",
+   "readings": [
+    "Case: Amazon.com",
+    "Chapter 4"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-04",
+   "title": "Inventory 2 (EOQ and Multiperiod)",
+   "readings": [
+    "EOQ video",
+    "MSD 7.1-7.7, 14.1-14.9"
+   ],
+   "prep": [
+    "Yedioth case write-up due at the beginning of class"
+   ]
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-05",
+   "title": "Game Theory II: Product Differentiation",
+   "readings": [
+    "A Stingy Spirit Lifts Airline's Profit",
+    "Spirit Airlines Canceled All Flights and Is Going Out of Business (background)",
+    "B&W 19.1, 19.2, 19.4"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.311",
+   "date": "2026-11-05",
+   "title": "Interpersonal Dynamics II: Optimizing Team Performance",
+   "readings": [
+    "In-class team exercise, materials distributed in class"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-05",
+   "title": "Long-Term Debt",
+   "readings": [
+    "Chapter 9"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-06",
+   "title": "Recitation 4: Game Theory Basics",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-06",
+   "title": "Recitation: HW 4 material",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-06",
+   "title": "Recitation: Inventory 2 and Yedioth review",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-09",
+   "title": "Building Optimization Models",
+   "readings": [
+    "Bertsimas & Freund, chapter 7.1-7.2 and 8.1"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.311",
+   "date": "2026-11-09",
+   "title": "Interpersonal Dynamics III: Negotiation (online, 6:30-8:00pm)",
+   "readings": [],
+   "prep": [
+    "Zoom link on Canvas calendar"
+   ]
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-09",
+   "title": "Operational Risk Management: Barings Bank and Katrina",
+   "readings": [
+    "Operational Risk Management chapter 16, Hurricane Katrina",
+    "Case: The Barings Collapse (A)"
+   ],
+   "prep": [
+    "Prepare the Barings and Katrina questions"
+   ]
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-11-09",
+   "title": "Sprint 2 begins (class ends 6:00pm for 15.311 session)",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-10",
+   "title": "Game Theory III: Dynamic Games and Entry Deterrence",
+   "readings": [
+    "With Output Hikes, OPEC+ Again Targets US Shale Oil",
+    "How the US Plans to Break China's Stranglehold on Lithium (background)",
+    "B&W 19.7"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-11-10",
+   "title": "Communication Strategy: Bias in the Workplace",
+   "readings": [
+    "Case: Sonia Millar: Negotiating for the C-Suite",
+    "King & Jones, Why Subtle Bias is So Often Worse than Blatant Discrimination"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-10",
+   "title": "Leases",
+   "readings": [
+    "Chapter 10"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-12",
+   "title": "Game Theory IV: Price Competition Simulation",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.311",
+   "date": "2026-11-12",
+   "title": "Interpersonal Dynamics IV: Building Coalitions",
+   "readings": [
+    "Case: Galbraith and Company, Kellogg DRRC",
+    "The Political Perspective 19-196, re-read on building a coalition"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-12",
+   "title": "Stockholders' Equity",
+   "readings": [
+    "Case: Tesla",
+    "Chapter 11"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-13",
+   "title": "Recitation: HW 5 material",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-13",
+   "title": "Recitation: Inventory 2 and Simulation Game 2",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-16",
+   "title": "Linear Optimization",
+   "readings": [
+    "Bertsimas & Freund, chapter 7.3-7.6"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-16",
+   "title": "Operational Risk Management II",
+   "readings": [
+    "Operational Risk Management chapter 16, Hurricane Katrina",
+    "Case: The Barings Collapse (A)"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-11-16",
+   "title": "Sprint 2",
+   "readings": [],
+   "prep": [
+    "Squad check-in"
+   ]
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-17",
+   "title": "Game Theory V: Repeated Price Competition",
+   "readings": [
+    "Chinese E-Commerce Leaders Brush Off Regulatory Risk to Continue 'Instant Retail' Price War",
+    "New Limits for a Rent Algorithm That Prosecutors Say Let Landlords Drive Up Prices (background)",
+    "B&W 12.4 pp.418-421, 19.5"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-11-17",
+   "title": "Communication Strategy: Impromptu Speaking",
+   "readings": [
+    "MIT Sloan Note: Impromptu Speaking"
+   ],
+   "prep": [
+    "Lab 7: Story Lab to Advance Inclusion and Belonging"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-17",
+   "title": "Stock Options and Other Equity Topics",
+   "readings": [
+    "Chapter 11"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-18",
+   "title": "Discrete Optimization I",
+   "readings": [
+    "Bertsimas & Freund, chapter 9.1-9.3"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-18",
+   "title": "Case: Jet Blue",
+   "readings": [
+    "JetBlue Airways: Valentine's Day 2007",
+    "MSD chapter 15"
+   ],
+   "prep": [
+    "Prepare the four questions on JetBlue's value proposition and the Feb 14 crisis"
+   ]
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-19",
+   "title": "Antitrust",
+   "readings": [
+    "Newly Unsealed Records Reveal Amazon's Price-Fixing Tactics, California Attorney General Claims",
+    "EU Fines Google $1 Billion for Favoring Its Own Services",
+    "Executive Summary of Anti-Trust Laws (background)",
+    "B&W 19.8"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.311",
+   "date": "2026-11-19",
+   "title": "Technology Adoption I: Choosing an AI Pilot",
+   "readings": [
+    "Case: Wayfair's Talent Organization: Choosing an AI Pilot, MIT Sloan 19-198"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-19",
+   "title": "Accounting for Income Taxes",
+   "readings": [
+    "Chapter 10"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-20",
+   "title": "Recitation 5: Repeated Games and Antitrust",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-20",
+   "title": "Recitation 6: Linear Optimization",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-20",
+   "title": "Recitation: Retailer Game",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-23",
+   "title": "Discrete Optimization II",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-23",
+   "title": "COVID-19 Operations and Risk Management",
+   "readings": [
+    "Age-stratified infection fatality rate of COVID-19 in the non-elderly population",
+    "Serious adverse events of special interest following mRNA COVID-19 vaccination"
+   ],
+   "prep": [
+    "A-L read paper 1 and skim paper 2; M-Z read paper 2 and skim paper 1"
+   ]
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-11-23",
+   "title": "Sprint 2",
+   "readings": [],
+   "prep": [
+    "Squad check-in"
+   ]
+  },
+  {
+   "course": "15.311",
+   "date": "2026-11-24",
+   "title": "Technology Adoption II: Implementing AI (10:00-11:30, E51-315)",
+   "readings": [
+    "Case: Bojinov, Sadun & Zhang, Microsoft Customer and Partner Solutions: The Deployment of Copilot (A), HBS 626065"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-24",
+   "title": "Financial Statement Analysis I (special class times)",
+   "readings": [
+    "Case: Walmart and Amazon",
+    "Chapter 5"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-30",
+   "title": "Overview: AI, ML, Deep Learning and GenAI",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-30",
+   "title": "Case: Credem, Banking on Cheese",
+   "readings": [
+    "Case: CREDEM: Banking on Cheese"
+   ],
+   "prep": [
+    "Prepare the three questions on Verdi's loan and MGT"
+   ]
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-11-30",
+   "title": "Sprint 2 check-in and share-out",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-12-01",
+   "title": "Value Proposition from Market Distortions",
+   "readings": [
+    "How to Learn to Stop Worrying and Love Surge Pricing",
+    "FDA Approves Some Apple AirPods to Be Used as Hearing Aids (background)",
+    "B&W 14.1-14.5"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.280",
+   "date": "2026-12-01",
+   "title": "Team Presentation (extra class)",
+   "readings": [
+    "Three Group Presentation Pitfalls — and How to Avoid Them"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-12-01",
+   "title": "Financial Statement Analysis II",
+   "readings": [
+    "Case: Walmart and Amazon",
+    "Chapter 5"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-12-02",
+   "title": "Revenue Management 1",
+   "readings": [
+    "MSD chapter 16"
+   ],
+   "prep": [
+    "Retail game played during class"
+   ]
+  },
+  {
+   "course": "15.010",
+   "date": "2026-12-03",
+   "title": "Externalities",
+   "readings": [
+    "Congestion Pricing After One Year: How Life Has Changed",
+    "Carbon Tax Will Hit EU's Budget Airlines Where It Hurts (background)",
+    "B&W 20.1-20.5"
+   ],
+   "prep": [
+    "Pre-class videos and Canvas quiz"
+   ]
+  },
+  {
+   "course": "15.311",
+   "date": "2026-12-03",
+   "title": "Technology Adoption III: Reskilling for the Future of Work",
+   "readings": [
+    "Case: Kerr & Fuller, AT&T, Retraining, and the Workforce of Tomorrow, HBS 820017"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-12-03",
+   "title": "Ethics",
+   "readings": [
+    "Case: FTX"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-12-04",
+   "title": "Recitation 6: Value Proposition and Externalities",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-12-04",
+   "title": "Recitation 7: Discrete Optimization",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-12-04",
+   "title": "Recitation: HW 6 material",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-12-07",
+   "title": "DMD in practice",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-12-07",
+   "title": "Revenue Management 2 (choice models and assortment optimization)",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-12-07",
+   "title": "Final session: gallery launch and superlatives",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-12-08",
+   "title": "Adverse Selection and Moral Hazard",
+   "readings": [
+    "Why the ACA Needs Young People — and the Looming 'Death Spiral' for Health Insurance",
+    "The Economics Behind All-You-Can-Eat and Other 'Unlimited' Deals (background)",
+    "B&W 21.1"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.280",
+   "date": "2026-12-08",
+   "title": "Course Review and Reflections",
+   "readings": [
+    "Powell, Writing to Reflect: Mindful Leadership in the Face of Change"
+   ],
+   "prep": [
+    "Lab 8: Core Reflection"
+   ]
+  },
+  {
+   "course": "15.515",
+   "date": "2026-12-08",
+   "title": "Review and Synthesis",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-12-09",
+   "title": "Final Exam Review (last day of class)",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.761",
+   "date": "2026-12-09",
+   "title": "Course Wrap-Up",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-12-10",
+   "title": "Behavioral Economics and Course Lessons",
+   "readings": [
+    "Amazon Agrees Largest-Ever Civil Penalty in $2.5bn Settlement with US Regulators",
+    "Nudge, introduction (background)"
+   ],
+   "prep": []
+  },
+  {
+   "course": "15.311",
+   "date": "2026-12-10",
+   "title": "Course Wrap Up",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.010",
+   "date": "2026-12-11",
+   "title": "Recitation 7: Final Review",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.060",
+   "date": "2026-12-14",
+   "title": "Final exam",
+   "readings": [],
+   "prep": []
+  },
+  {
+   "course": "15.515",
+   "date": "2026-12-16",
+   "title": "Final exam (tentative, Registrar to confirm)",
+   "readings": [],
+   "prep": []
+  }
+ ],
+ "deadlines": [
+  {
+   "course": "15.515",
+   "date": "2026-09-21",
+   "time": "16:00",
+   "title": "Homework 1"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-21",
+   "title": "Deliverable 1 (Noverna case)"
+  },
+  {
+   "course": "15.010",
+   "date": "2026-09-23",
+   "time": "17:00",
+   "title": "Project 1"
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-23",
+   "title": "Individual assignment: buildup diagram, JB deicing case"
+  },
+  {
+   "course": "15.515",
+   "date": "2026-09-28",
+   "time": "16:00",
+   "title": "Homework 2"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-09-28",
+   "title": "Deliverable 2"
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-09-28",
+   "title": "Planning Document 1"
+  },
+  {
+   "course": "15.761",
+   "date": "2026-09-30",
+   "title": "Individual assignment: Queueing"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-05",
+   "title": "Deliverable 3"
+  },
+  {
+   "course": "15.010",
+   "date": "2026-10-07",
+   "time": "17:00",
+   "title": "Project 2"
+  },
+  {
+   "course": "15.515",
+   "date": "2026-10-13",
+   "time": "16:00",
+   "title": "Homework 3"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-13",
+   "title": "Deliverable 4"
+  },
+  {
+   "course": "15.761",
+   "date": "2026-10-14",
+   "title": "Team assignment: PATA case"
+  },
+  {
+   "course": "15.515",
+   "date": "2026-10-15",
+   "title": "Midterm exam"
+  },
+  {
+   "course": "15.311",
+   "date": "2026-10-15",
+   "title": "Midterm exam"
+  },
+  {
+   "course": "15.311",
+   "date": "2026-10-16",
+   "title": "First team project check-in meeting (window Oct 5-16; update due 2 days before)"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-10-19",
+   "title": "Midterm exam"
+  },
+  {
+   "course": "15.010",
+   "date": "2026-10-22",
+   "title": "Midterm exam"
+  },
+  {
+   "course": "15.280",
+   "date": "2026-10-23",
+   "title": "Persuasive Presentation I window closes (self-assessment within 48h)"
+  },
+  {
+   "course": "15.311",
+   "date": "2026-10-29",
+   "time": "23:59",
+   "title": "Negotiation Skills Assessment"
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-11-02",
+   "title": "Planning Document 2"
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-04",
+   "title": "Team assignment: Yedioth case"
+  },
+  {
+   "course": "15.311",
+   "date": "2026-11-05",
+   "time": "23:59",
+   "title": "Negotiation Simulation"
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-09",
+   "time": "16:00",
+   "title": "Homework 4"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-09",
+   "title": "Deliverable 5"
+  },
+  {
+   "course": "15.010",
+   "date": "2026-11-12",
+   "title": "Project 3 (due before class)"
+  },
+  {
+   "course": "15.311",
+   "date": "2026-11-16",
+   "title": "Second team project check-in meeting (window Nov 2-16; update due 2 days before)"
+  },
+  {
+   "course": "15.515",
+   "date": "2026-11-16",
+   "time": "16:00",
+   "title": "Homework 5"
+  },
+  {
+   "course": "15.761",
+   "date": "2026-11-16",
+   "title": "Individual assignment: base stock levels, HP case"
+  },
+  {
+   "course": "15.280",
+   "date": "2026-11-19",
+   "title": "Persuasive Presentation II window closes (self-assessment within 48h)"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-23",
+   "title": "Deliverable 6"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-11-30",
+   "title": "Deliverable 7"
+  },
+  {
+   "course": "15.280",
+   "date": "2026-12-01",
+   "title": "Team presentation (based on OP client project)"
+  },
+  {
+   "course": "15.010",
+   "date": "2026-12-03",
+   "title": "Project 4 (due before class)"
+  },
+  {
+   "course": "15.515",
+   "date": "2026-12-04",
+   "time": "16:00",
+   "title": "Homework 6"
+  },
+  {
+   "course": "15.S23",
+   "date": "2026-12-07",
+   "title": "Portfolio web-doc shipped to class gallery"
+  },
+  {
+   "course": "15.280",
+   "date": "2026-12-08",
+   "title": "Reflection report"
+  },
+  {
+   "course": "15.761",
+   "date": "2026-12-08",
+   "title": "Team assignment: simulation report"
+  },
+  {
+   "course": "15.311",
+   "date": "2026-12-10",
+   "time": "17:00",
+   "title": "Team project report"
+  },
+  {
+   "course": "15.060",
+   "date": "2026-12-14",
+   "title": "Final exam"
+  },
+  {
+   "course": "15.010",
+   "date": "2026-12-15",
+   "title": "Final exam"
+  },
+  {
+   "course": "15.515",
+   "date": "2026-12-16",
+   "title": "Final exam (tentative)"
+  }
+ ],
+ "canvas_rules": {
+  "15.280": {
+   "deliverable_titles": [
+    "user's manual",
+    "users manual",
+    "persuasive presentation",
+    "self-assessment",
+    "self assessment",
+    "team presentation",
+    "reflection report",
+    "feedback form"
+   ]
+  }
+ },
+ "reading_keywords": [
+  "reading",
+  "readings",
+  "read ",
+  "watch",
+  "video",
+  "podcast",
+  "webinar",
+  "pre-class",
+  "prep work",
+  "case:",
+  "note:",
+  "chapter"
+ ]
+}

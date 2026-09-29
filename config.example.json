@@ -1,0 +1,14 @@
+{
+  "canvas_host": "canvas.mit.edu",
+  "canvas_token": "PASTE_YOUR_CANVAS_TOKEN_HERE",
+
+  "smtp_user": "you@gmail.com",
+  "smtp_password": "PASTE_YOUR_16_CHARACTER_APP_PASSWORD_HERE",
+  "mail_to": "you@gmail.com",
+
+  "days_ahead": 7,
+  "announcement_lookback_days": 3,
+  "hide_submitted": true,
+  "send_when_empty": true,
+  "ignore_course_ids": []
+}
