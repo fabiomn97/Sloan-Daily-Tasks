@@ -4,7 +4,7 @@ One email at 7:00am with everything due and everything to read for the next
 seven days, across seven courses that each organize Canvas differently. Shared 
 instructions to over 15 members of my class for their own building.
 
-**[Read the instructions →](https://YOUR-USERNAME.github.io/canvas-digest/)**
+**[Read the instructions →]()**
 
 [Download a sample digest (PDF)](canvas-digest-sample.pdf)
 
