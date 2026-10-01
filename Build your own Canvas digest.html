@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Build your own Canvas digest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..800,0..100,0..1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+    --paper:#ffffff; --band:#f2f4f6; --ink:#14181d; --body:#39424c;
+    --muted:#6a727c; --faint:#9aa2ac; --rule:#dfe3e8; --hair:#eef1f4;
+    --read:#17558a; --deliver:#a4271a; --klass:#1f6b47; --marker:#ffe27a;
+    --display:"Fraunces",Georgia,serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#101418; --band:#161b21; --ink:#eef1f4; --body:#c3ccd5;
+      --muted:#9aa4af; --faint:#6e7885; --rule:#28313a; --hair:#1e252c;
+      --read:#7fb3e0; --deliver:#e58a7b; --klass:#7cc9a0; --marker:#4a3f1a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101418; --band:#161b21; --ink:#eef1f4; --body:#c3ccd5;
+    --muted:#9aa4af; --faint:#6e7885; --rule:#28313a; --hair:#1e252c;
+    --read:#7fb3e0; --deliver:#e58a7b; --klass:#7cc9a0; --marker:#4a3f1a;
+  }
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--paper);color:var(--body);font-family:var(--sans);
+       font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--display);color:var(--ink);line-height:1.1;margin:0}
+  h1{font-size:clamp(36px,7vw,60px);font-weight:700;letter-spacing:-.015em;
+     font-variation-settings:"SOFT" 30,"WONK" 1,"opsz" 120}
+  h2{font-size:clamp(25px,4.2vw,34px);font-weight:600;margin-bottom:14px;
+     font-variation-settings:"SOFT" 24,"WONK" 1,"opsz" 60}
+  h3{font-size:18px;font-weight:600;font-variation-settings:"SOFT" 20,"opsz" 24}
+  p{margin:0 0 20px}
+  strong{color:var(--ink);font-weight:600}
+  a{color:var(--read)}
+  header{padding:clamp(56px,11vw,110px) 0 clamp(36px,6vw,60px)}
+  .kicker{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:22px}
+  .standfirst{font-size:clamp(18px,2.5vw,21px);line-height:1.5;margin-top:24px;max-width:40ch}
+  section{padding:clamp(38px,6vw,58px) 0;border-top:1px solid var(--rule)}
+  .lead{font-size:19px;color:var(--ink)}
+
+  .facts{display:grid;gap:2px;background:var(--rule);margin:26px 0 6px}
+  @media(min-width:620px){.facts{grid-template-columns:repeat(3,1fr)}}
+  .fact{background:var(--paper);padding:20px}
+  .fact .n{font-family:var(--display);font-size:27px;color:var(--ink);
+           font-variation-settings:"SOFT" 20,"opsz" 36}
+  .fact .l{font-size:13.5px;color:var(--muted);margin-top:3px}
+
+  ol.stages{list-style:none;counter-reset:s;padding:0;margin:26px 0 0}
+  ol.stages li{counter-increment:s;padding:20px 0 20px 52px;position:relative;
+               border-bottom:1px solid var(--hair)}
+  ol.stages li::before{
+    content:counter(s);position:absolute;left:0;top:20px;
+    width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--paper);
+    font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center}
+  ol.stages h3{margin-bottom:4px}
+  ol.stages p{font-size:15px;margin:0;color:var(--body)}
+  .mins{font-size:12.5px;color:var(--faint);font-weight:500}
+
+  ul{padding-left:20px;margin:0 0 20px}
+  li{margin-bottom:10px}
+  li::marker{color:var(--faint)}
+
+  .warn{border-left:3px solid var(--deliver);padding:2px 0 2px 18px;margin:26px 0}
+  .warn h3{color:var(--deliver);margin-bottom:6px}
+  .warn p{font-size:15.5px;margin-bottom:0}
+
+  .promptbox{margin:26px 0 8px;border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+  .promptbar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+             padding:12px 14px;background:var(--band);border-bottom:1px solid var(--rule)}
+  .promptbar span{font-size:13px;font-weight:600;color:var(--muted)}
+  .copy{font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer;
+        background:var(--ink);color:var(--paper);border:0;padding:8px 15px;border-radius:3px}
+  .copy:hover{opacity:.88}
+  pre{margin:0;padding:18px 16px;overflow-x:auto;background:var(--paper);
+      font-family:var(--mono);font-size:12.5px;line-height:1.6;color:var(--body);
+      white-space:pre;max-height:460px;overflow-y:auto}
+  .caption{font-size:13.5px;color:var(--faint);margin-top:4px}
+  code{font-family:var(--mono);font-size:.88em;background:var(--band);
+       padding:2px 5px;border-radius:2px;color:var(--ink)}
+  footer{padding:46px 0 70px;border-top:1px solid var(--rule);font-size:14px;color:var(--faint)}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="kicker">A build guide · 15.S23 AI Builder Space</div>
+  <h1>Build your own Canvas digest.</h1>
+  <p class="standfirst">One email every morning with everything due and everything to read for the next seven days. You don't need to know how to code. You do need about ninety minutes.</p>
+</header>
+
+<section class="wrap">
+  <h2>What you'll end up with</h2>
+  <p class="lead">An email that arrives at 7:00am, built from your own Canvas account and your own syllabi.</p>
+  <p>It groups the next seven days by date. Inside each day it separates what you have to hand in from what you have to have read, colour-coded so you can triage it before coffee. Work you've already submitted stays visible but greyed out, so "done" never looks like "missing."</p>
+  <div class="facts">
+    <div class="fact"><div class="n">~90 min</div><div class="l">Start to first email</div></div>
+    <div class="fact"><div class="n">$0</div><div class="l">Runs on your own machine</div></div>
+    <div class="fact"><div class="n">0</div><div class="l">Packages to install</div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Before you start</h2>
+  <p>Check these three things first. The first one is the dealbreaker, and it takes thirty seconds.</p>
+  <ul>
+    <li><strong>Can you generate a Canvas access token?</strong> Go to your Canvas settings, scroll to Approved Integrations, and look for a "+ New Access Token" button. Some universities have disabled this for students. If it's missing, nothing else here works.</li>
+    <li><strong>Do you have a Gmail account with 2-Step Verification on?</strong> You'll need it to generate an app password, which is what lets a script send mail. School Google accounts often block this, so a personal Gmail is safer.</li>
+    <li><strong>Do you have your syllabi as PDFs?</strong> All of them. This is where the readings-per-session data comes from, and Canvas genuinely does not have it.</li>
+  </ul>
+  <p>You'll also need Python installed. Claude will walk you through it if you don't have it.</p>
+
+  <div class="warn">
+    <h3>Never paste a token or password into a chat</h3>
+    <p>Your Canvas token carries your full account permissions — submitting work as you, reading your grades, seeing classmates' data in group contexts. Claude cannot reach Canvas anyway; the script runs on your machine and reads the token from a local file. Credentials go in that file and nowhere else. If you paste one by accident, revoke it immediately and generate a new one.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>The four stages</h2>
+  <p>So you know the shape of it before you start. Everything begins with one message.</p>
+  <ol class="stages">
+    <li>
+      <h3>Send the prompt, syllabi attached <span class="mins">· 2 min</span></h3>
+      <p>Copy the prompt below into a new Claude conversation and attach every syllabus in that same message. Both together, one message. Claude reads the PDFs directly.</p>
+    </li>
+    <li>
+      <h3>Claude interviews you, then builds your schedule <span class="mins">· 25 min</span></h3>
+      <p>Which courses, which sections, which operating system, what time you want the email. Sections matter more than you'd think: get one wrong and the meeting days are wrong all semester. Then every session and reading from your syllabi becomes one editable file.</p>
+    </li>
+    <li>
+      <h3>You set up credentials and test <span class="mins">· 30 min</span></h3>
+      <p>Canvas token, Gmail app password, a config file on your machine. Then three checks: do the courses match, does a digest build, does an email arrive.</p>
+    </li>
+    <li>
+      <h3>You schedule it, then tune it <span class="mins">· 20 min</span></h3>
+      <p>A daily task at 7:00am. Then a week of small corrections as you spot things filed in the wrong place. This part never fully ends, and that's fine.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="wrap">
+  <h2>The prompt</h2>
+  <p class="lead">Copy this into a new Claude conversation. Attach your syllabi in the same message.</p>
+  <p>It carries the full architecture, the bugs worth avoiding, and instructions on how to teach you — one step at a time, waiting for you at each stage rather than dumping thirty commands at once.</p>
+
+  <div class="promptbox">
+    <div class="promptbar">
+      <span>Paste into a new Claude chat</span>
+      <button class="copy" id="copy" type="button">Copy</button>
+    </div>
+    <pre id="prompt">I want to build an automated daily email digest that reads my university's
+Canvas account, so I stop missing readings and deadlines. I am attaching my
+course syllabi.
+
+=== THE PROBLEM ===
+
+Every professor organises Canvas differently. Some file readings under
+Assignments, some under Files, some post them as announcements. The
+authoritative schedule usually lives in a syllabus PDF that Canvas has never
+seen. Each system is sensible on its own. The cost lands on the student
+taking all of them at once, opening five tabs per course to answer one
+question: what do I actually need to do before tomorrow?
+
+=== WHAT I WANT ===
+
+One email each morning covering the next 7 days. Grouped by day. Inside each
+day, split into deliverables and class/readings. Colour-coded with a legend:
+blue for readings, red for deliverables, green for class and prep.
+
+=== INTERVIEW ME FIRST. DO NOT WRITE CODE UNTIL I HAVE ANSWERED. ===
+
+Courses and sections, ask these one at a time:
+- Which courses am I taking this semester?
+- For EACH course, which section or cohort am I in? Syllabi list all of them
+  (A-F, or ocean names like Mediterranean, or numbered like E2). Meeting days
+  and rooms differ by section. Ask course by course. Do not assume one
+  section applies to all of them.
+- Are any of my courses NOT covered by the syllabi I uploaded?
+- Are any uploaded syllabi for courses I am NOT taking? Drop those.
+- Should Friday recitations and optional sessions appear in the digest?
+- Do any of my courses split work by last-name initial (A-L vs M-Z)?
+
+Setup questions:
+- My operating system, and how comfortable I am in a terminal
+- My Canvas web address, and whether my school still lets students generate
+  access tokens
+- What time I want the email and where to send it
+
+=== ARCHITECTURE ===
+
+Two sources merged, with Canvas authoritative:
+
+1. A schedule file built from my syllabi. Only a syllabus says which reading
+   belongs to which class session. Canvas has no concept of that
+   relationship, which is why the syllabi are not optional.
+2. The Canvas REST API, for announcements, live due dates, submission status,
+   and anything the syllabus did not predict.
+
+Where the two disagree, Canvas wins, but the digest must FLAG the difference
+rather than silently picking one. Tag a deadline Canvas has but the syllabus
+does not as "not on the syllabus". Tag one that moved as "syllabus said
+18 Sep". I want to see the conflict, not trust a merge I cannot inspect.
+
+Keep the schedule in one JSON file with courses, sessions and deadlines, so I
+can fix a section, add a course, or correct a reading without touching code.
+
+=== CONSTRAINTS ===
+
+- Python, standard library only. No pip installs, no virtual environment.
+- Runs locally on my own machine on a daily schedule.
+- Sends via Gmail SMTP using an app password.
+- Credentials live in a local gitignored config file and nowhere else.
+- The email must render correctly in Gmail, which rules out most modern CSS.
+  Use tables and inline styles.
+
+=== BUGS A PREVIOUS BUILD HIT. PLEASE AVOID THESE. ===
+
+- Classify readings vs deliverables by reading each Canvas item's
+  submission_types and grading_type. Does it actually accept a handin? If
+  not, it is a reading whatever its title says. Matching on titles is
+  fragile and breaks differently in every course.
+- Do NOT hide assignments I have already submitted. Grey them out and tag
+  them. Hiding them makes "done" and "doesn't exist" look identical, which
+  makes the whole digest untrustworthy.
+- Canvas caps context_codes at 10 per request. Chunk them, or announcements
+  silently disappear with no error.
+- Force UTF-8 on every file read and write. On Windows the default encoding
+  cannot write an em-dash and the script dies halfway through a file.
+- Do not use %-d or %-I in strftime. They do not exist on Windows.
+- Build inspectable commands: --check to show which Canvas courses matched
+  which syllabus, --dry-run to build without sending, --audit to list every
+  assignment and how it was classified. Do not ship a black box.
+
+=== HOW TO TEACH ME THIS ===
+
+Assume I have never used a terminal. I am not stupid, I am just new to it.
+
+- Give me ONE stage at a time. Stop and wait for me to confirm it worked
+  before moving to the next. Never dump the whole setup at once.
+- One command per code block. Never more than about five blocks in a message.
+- After each command, tell me what I should see if it worked, and what the
+  most likely failure looks like.
+- Use the exact syntax for MY operating system. Ask first if unsure. Do not
+  give me macOS commands if I am on Windows.
+- Explain any unfamiliar term the first time you use it, in one clause.
+- When something errors, ask me to paste the error exactly rather than
+  describing it.
+- Never ask me to paste a token or password into this chat. If I do it by
+  accident, tell me to revoke it immediately.
+- Before each stage, tell me roughly how long it will take.
+- Give me a way to verify each stage before we move on.
+
+Start by interviewing me.</pre>
+  </div>
+  <p class="caption">Attach every syllabus to this same message, before you send it. That is stage one, and there is nothing to do beforehand.</p>
+</section>
+
+<section class="wrap">
+  <h2>What to expect</h2>
+  <p><strong>It will not be right on the first run.</strong> Something will land in the wrong colour, a reading will show as a deliverable, a course will match the wrong syllabus. That's normal. Use <code>--audit</code> to see how everything got classified, and tell Claude what's wrong.</p>
+  <p><strong>Your syllabi will contradict themselves.</strong> An assignment described as due one date in the text and another in the summary table. Claude should flag these rather than silently choosing, and Canvas settles it either way.</p>
+  <p><strong>Budget a week of small fixes.</strong> The first few mornings you'll spot things. After that it mostly runs itself until a token expires.</p>
+</section>
+
+<footer class="wrap">
+  <div>Built for 15.S23 AI Builder Space, MIT Sloan, Fall 2026. Adapt it freely.</div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById("copy");
+  var src = document.getElementById("prompt");
+  if(!btn || !src) return;
+  btn.addEventListener("click", function(){
+    var text = src.textContent;
+    function done(ok){
+      btn.textContent = ok ? "Copied" : "Press Ctrl+C";
+      setTimeout(function(){ btn.textContent = "Copy"; }, 2000);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ done(true); },
+                                              function(){ select(); });
+    } else { select(); }
+    function select(){
+      var r = document.createRange();
+      r.selectNodeContents(src);
+      var s = window.getSelection();
+      s.removeAllRanges(); s.addRange(r);
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch(e){ ok = false; }
+      done(ok);
+    }
+  });
+})();
+</script>
+</body>
+</html>
