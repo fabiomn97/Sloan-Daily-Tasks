@@ -1,4 +1,4 @@
-# Canvas Digest
+# Sloan Daily Tasks Tracker
 
 One email at 7:00am with everything due and everything to read for the next
 seven days, across seven courses that each organize Canvas differently. Shared 
